@@ -69,12 +69,14 @@ You DO NOT need to run this command. This has already been done for you.
 abyss-pe name=cha1 k=27 in="../LIB2570_raw_R1.fastq ../LIB2570_raw_R2.fastq" np=4
 
 \end{lstlisting}
+\end{warning}
+\beggin{steps}
 Let's look at the stats by doing:
 \begin{lstlisting}
 less cha1-stats.tab
 \end{lstlisting}
+\end{steps}
 
-\end{warning}
 
 \begin{table}[H]
   \centering
@@ -98,11 +100,14 @@ This is also a pre-computed example for you:
 
 abyss-pe name=cha2 k=61 in="../LIB2570_raw_R1.fastq ../LIB2570_raw_R2.fastq" np=4
 \end{lstlisting}
+\end{warning}
+
+\begin{steps}
 Again, we need to look at the statstics of our new assembly using k=61:
 \begin{lstlisting}
 less cha2-stats.tab
 \end{lstlisting}
-\end{warning}
+\end{steps}
 
 It should be looking like this:
 \begin{table}[H]
