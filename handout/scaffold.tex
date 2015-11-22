@@ -11,7 +11,7 @@
   Bernardo Clavijo, TGAC \mailto{Bernardo.Clavijo@tgac.ac.uk} \\
 }
 \setModuleContributions{%
-  Sonika Tyagi, AGRF \mailto{sonika.tyagi@agrf.org.au}
+  Sonika Tyagi, AGRF \mailto{sonika.tyagi@agrf.org.au} \\
   Zhiliang Chan \mailto{zhiliang@unsw.edu.au}
 }
 
@@ -22,10 +22,9 @@
 
 After completing this module the trainee should be able to:
 \begin{itemize}
-  \item run a first pass eukaryotic assembly and do goal checks 
-  \item Develop validation metrics or tools for NGS data and assembly.
-  \item Improving methods and pipelines for genome assembly.
-  \item Convince the lab guys to tweak protocols.
+  \item Run an assembly using long mate pair (LMP) reads. 
+  \item Compare results of LMP assemblies with those from the short reads.
+  \item Run scaffolding and assess the assembly statistics`
 
 \end{itemize}
 % END KLOs
@@ -46,16 +45,18 @@ After completing this module the trainee should be able to:
   	\url{http://soap.genomics.org.cn/about.html}
 \end{description}
 
-\section{Data source}
 
-%\begin{information}
-%Information to be provided to the trainee.
-%\end{information}
 
 \newpage
 
 % BEGIN: Introduction
 \section{Scaffolding with long mate pair libraries: Chalara scaffolding using LMP}
+
+\begin{information}
+Scaffold is made of two or more contigs joined together using the read pair information. In the absence of a high-quality reference genome, new genome assemblies are often evaluated on the basis of the number of scaffolds and contigs required to represent the genome. Other criteria such as the alignment of reads back to assemblies, N50,  and the length of contigs and scaffolds relative to the size of the genome can also be used to assess the quality of assemblies.
+In this excercise we will be using a long mate pair data to perform assembly and scaffolding and we will focus on how using LMP reads can affect the assemblies.
+Most part of this tutorial has been precomputed and made available to you in interest of time. We will spend more time exploring and discussing the results.
+\end{information}
 \subsection{Pair-end assembly using Chalara dataset}
 Before doing a scaffolding, we need to build an assembly using the pair-end reads first.
 
@@ -245,3 +246,11 @@ Let's look at the stats.
     \end{tabular}
   \label{tab:chaklmp2-k61}
 \end{table}
+
+\section{References}
+
+%TODO Change to using BiBTeX
+\begin{enumerate}
+  \item Robert Ekblom* andJochen B. W. Wolf. "A field guide to whole-genome sequencing, assembly and annotation" Evolutionary Applications Special Issue: Evolutionary Conservation Volume 7, Issue 9, pages 1026–1042, November 2014
+  \item De novo genome assembly: what every biologist should know Nature Methods 9, 333–337 (2012) doi:10.1038/nmeth.1935 
+\end{enumerate}
