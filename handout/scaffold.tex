@@ -86,7 +86,7 @@ less cha1-stats.tab
 \begin{table}[H]
   \centering
   \caption{Statistics of \textit{Chalara} assembly by ABySS using k=27}
-    \begin{tabular}{rrrrrrrrrrr}
+    \begin{tabular}{lllllllllll}
     \toprule
     \textbf{n} & \textbf{n:500} & \textbf{L50} & \textbf{min} & \textbf{N80}& \textbf{N50}& \textbf{N20}& \textbf{E-size}& \textbf{max} & \textbf{sum}& \textbf{name}\\
     \midrule
@@ -118,7 +118,7 @@ It should be looking like this:
 \begin{table}[H]
   \centering
   \caption{Statistics of \textit{Chalara} assembly by ABySS using k=61}
-    \begin{tabular}{rrrrrrrrrrr}
+    \begin{tabular}{lllllllllll}
     \toprule
     \textbf{n} & \textbf{n:500} & \textbf{L50} & \textbf{min} & \textbf{N80}& \textbf{N50}& \textbf{N20}& \textbf{E-size}& \textbf{max} & \textbf{sum}& \textbf{name}\\
     \midrule
@@ -152,15 +152,18 @@ Let's put some LMP in there.
 This is also a pre-computed example for you:
 \begin{lstlisting}
 abyss-pe name=chalmp1 k=61 in="../LIB2570_raw_R1.fastq ../LIB2570_raw_R2.fastq" mp="lmp1" lmp1="../LIB8209_raw_R1.fastq ../LIB8209_raw_R2.fastq" np=4
-less chalmp1-stats.tab
 \end{lstlisting}
 \end{warning}
+\begin{lstlisting}
+less chalmp1-stats.tab
+\end{lstlisting}
 \end{steps}
 
 \begin{table}[H]
+\small
   \centering
   \caption{Statistics of \textit{Chalara} assembly by ABySS using k=27}
-    \begin{tabular}{rrrrrrrrrrr}
+    \begin{tabular}{lllllllllll}
     \toprule
     \textbf{n} & \textbf{n:500} & \textbf{L50} & \textbf{min} & \textbf{N80}& \textbf{N50}& \textbf{N20}& \textbf{E-size}& \textbf{max} & \textbf{sum}& \textbf{name}\\
     \midrule
@@ -198,15 +201,18 @@ Prior task (already made) preprocess the LMP with nextclip.
 This is also a pre-computed example for you:
 \begin{lstlisting}
 abyss-pe name=chalmpproc1 k=61 in="../../cha_raw/LIB2570_raw_R1.fastq ../../cha_raw/LIB2570_raw_R2.fastq" mp="proclmp1" proclmp1="../LIB8209_preproc_R1.fastq ../LIB8209_preproc_R2.fastq" np=4
-less chalmpproc1-stats.tab
 \end{lstlisting}
 \end{warning}
+\begin{lstlisting}
+less chalmpproc1-stats.tab
+\end{lstlisting}
 \end{steps}
 
 \begin{table}[H]
+\small
   \centering
   \caption{Statistics of \textit{Chalara} assembly by ABySS using k=61 with LMP}
-    \begin{tabular}{rrrrrrrrrrr}
+    \begin{tabular}{lllllllllll}
     \toprule
     \textbf{n} & \textbf{n:500} & \textbf{L50} & \textbf{min} & \textbf{N80}& \textbf{N50}& \textbf{N20}& \textbf{E-size}& \textbf{max} & \textbf{sum}& \textbf{name}\\
     \midrule
@@ -247,15 +253,19 @@ Testing the inclussion of heavily pre-procesed LMP coverage into the DBG
 This is also a pre-computed example for you:
 \begin{lstlisting}
 abyss-pe name=chalmp2 k=61 se="../LIB8209_preproc_single.fastq" lib="lmp1" lmp1="../LIB8209_preproc_R1.fastq ../LIB8209_preproc_R2.fastq" np=4 >chaproclmp2.log 2>&1
-less chalmp2-stats.tab
 \end{lstlisting}
 \end{warning}
+\begin{lstlisting}
+less chalmp2-stats.tab
+\end{lstlisting}
+
 \end{steps}
 Let's look at the stats.
 \begin{table}[H]
+\small
   \centering
   \caption{Statistics of improved \textit{Chalara} assembly by ABySS using k=61 with LMP}
-    \begin{tabular}{rrrrrrrrrrr}
+    \begin{tabular}{lllllllllll}
     \toprule
     \textbf{n} & \textbf{n:500} & \textbf{L50} & \textbf{min} & \textbf{N80}& \textbf{N50}& \textbf{N20}& \textbf{E-size}& \textbf{max} & \textbf{sum}& \textbf{name}\\
     \midrule
@@ -271,6 +281,6 @@ Let's look at the stats.
 
 %TODO Change to using BiBTeX
 \begin{enumerate}
-  \item Robert Ekblom* andJochen B. W. Wolf. "A field guide to whole-genome sequencing, assembly and annotation" Evolutionary Applications Special Issue: Evolutionary Conservation Volume 7, Issue 9, pages 1026–1042, November 2014
-  \item De novo genome assembly: what every biologist should know Nature Methods 9, 333–337 (2012) doi:10.1038/nmeth.1935 
+  \item Robert Ekblom* andJochen B. W. Wolf. "A field guide to whole-genome sequencing, assembly and annotation" Evolutionary Applications Special Issue: Evolutionary Conservation Volume 7, Issue 9, pages 1026\–1042, November 2014
+  \item De novo genome assembly: what every biologist should know Nature Methods 9, 333\–337 (2012) doi:10.1038/nmeth.1935 
 \end{enumerate}
