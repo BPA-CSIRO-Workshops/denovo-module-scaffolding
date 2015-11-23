@@ -25,7 +25,6 @@ After completing this module the trainee should be able to:
   \item Run an assembly using long mate pair (LMP) reads. 
   \item Compare results of LMP assemblies with those from the short reads.
   \item Run scaffolding and assess the assembly statistics`
-
 \end{itemize}
 % END KLOs
 
@@ -76,7 +75,7 @@ abyss-pe name=cha1 k=27 in="../LIB2570_raw_R1.fastq ../LIB2570_raw_R2.fastq" np=
 
 \end{lstlisting}
 \end{warning}
-\beggin{steps}
+\begin{steps}
 Let's look at the stats by doing:
 \begin{lstlisting}
 less cha1-stats.tab
@@ -91,9 +90,9 @@ less cha1-stats.tab
     \toprule
     \textbf{n} & \textbf{n:500} & \textbf{L50} & \textbf{min} & \textbf{N80}& \textbf{N50}& \textbf{N20}& \textbf{E-size}& \textbf{max} & \textbf{sum}& \textbf{name}\\
     \midrule
-    394789  & 11681  & 2094  & 500  & 2880  & 6254  & 12303  & 7936    & 44414  & 44.07e6  & cha1-unitigs.fa
-	394199  & 11673  & 2097  & 500  & 2887  & 6255  & 12303  & 7937    & 44414  & 44.11e6  & cha1-contigs.fa
-	394161  & 11647  & 2095  & 500  & 2898  & 6269  & 12303  & 7944    & 44414  & 44.12e6  & cha1-scaffolds.fa
+    394789  & 11681  & 2094  & 500  & 2880  & 6254  & 12303  & 7936    & 44414  & 44.07e6  & cha1-unitigs.fa \\
+    394199  & 11673  & 2097  & 500  & 2887  & 6255  & 12303  & 7937    & 44414  & 44.11e6  & cha1-contigs.fa \\
+    394161  & 11647  & 2095  & 500  & 2898  & 6269  & 12303  & 7944    & 44414  & 44.12e6  & cha1-scaffolds.fa \\
     \bottomrule
     \end{tabular}
   \label{tab:chak27}
@@ -123,9 +122,9 @@ It should be looking like this:
     \toprule
     \textbf{n} & \textbf{n:500} & \textbf{L50} & \textbf{min} & \textbf{N80}& \textbf{N50}& \textbf{N20}& \textbf{E-size}& \textbf{max} & \textbf{sum}& \textbf{name}\\
     \midrule
-	130547  & 12596  & 1770  & 500  & 3352  & 8379  & 16380  & 10518   & 54300  & 50.75e6  & cha2-unitigs.fa
-	130210  & 12575  & 1771  & 500  & 3363  & 8382  & 16380  & 10525   & 54300  & 50.78e6  & cha2-contigs.fa
-	130182  & 12555  & 1769  & 500  & 3377  & 8394  & 16380  & 10534   & 54300  & 50.78e6  & cha2-scaffolds.fa
+    130547  & 12596  & 1770  & 500  & 3352  & 8379  & 16380  & 10518   & 54300  & 50.75e6  & cha2-unitigs.fa \\
+    130210  & 12575  & 1771  & 500  & 3363  & 8382  & 16380  & 10525   & 54300  & 50.78e6  & cha2-contigs.fa \\
+    130182  & 12555  & 1769  & 500  & 3377  & 8394  & 16380  & 10534   & 54300  & 50.78e6  & cha2-scaffolds.fa \\
     \bottomrule
     \end{tabular}
   \label{tab:chak61}
@@ -165,9 +164,9 @@ less chalmp1-stats.tab
     \toprule
     \textbf{n} & \textbf{n:500} & \textbf{L50} & \textbf{min} & \textbf{N80}& \textbf{N50}& \textbf{N20}& \textbf{E-size}& \textbf{max} & \textbf{sum}& \textbf{name}\\
     \midrule
-	130548  & 12596  & 1770  & 500  & 3352  & 8379  & 16380  & 10518   & 54300  & 50.75e6  & chalmp1-unitigs.fa
-	130211  & 12575  & 1771  & 500  & 3363  & 8382  & 16380  & 10525   & 54300  & 50.78e6  & chalmp1-contigs.fa
-	130148  & 12545  & 1769  & 500  & 3380  & 8400  & 16380  & 10535   & 54300  & 50.78e6  & chalmp1-scaffolds.fa
+    130548  & 12596  & 1770  & 500  & 3352  & 8379  & 16380  & 10518   & 54300  & 50.75e6  & chalmp1-unitigs.fa \\
+    130211  & 12575  & 1771  & 500  & 3363  & 8382  & 16380  & 10525   & 54300  & 50.78e6  & chalmp1-contigs.fa \\
+    130148  & 12545  & 1769  & 500  & 3380  & 8400  & 16380  & 10535   & 54300  & 50.78e6  & chalmp1-scaffolds.fa \\
     \bottomrule
     \end{tabular}
   \label{tab:chak27}
@@ -211,9 +210,9 @@ less chalmpproc1-stats.tab
     \toprule
     \textbf{n} & \textbf{n:500} & \textbf{L50} & \textbf{min} & \textbf{N80}& \textbf{N50}& \textbf{N20}& \textbf{E-size}& \textbf{max} & \textbf{sum}& \textbf{name}\\
     \midrule
-	130548  & 12596  & 1770  & 500  & 3352   & 8379   & 16380   & 10518   & 54300   & 50.75e6  & chalmpproc1-unitigs.fa
-	130211  & 12575  & 1771  & 500  & 3363   & 8382   & 16380   & 10525   & 54300   & 50.78e6  & chalmpproc1-contigs.fa
-	122061  & 6679   & 167   & 500  & 18609  & 87510  & 187171  & 106178  & 397967  & 51.15e6  & chalmpproc1-scaffolds.fa
+    130548  & 12596  & 1770  & 500  & 3352   & 8379   & 16380   & 10518   & 54300   & 50.75e6  & chalmpproc1-unitigs.fa \\
+    130211  & 12575  & 1771  & 500  & 3363   & 8382   & 16380   & 10525   & 54300   & 50.78e6  & chalmpproc1-contigs.fa \\
+    122061  & 6679   & 167   & 500  & 18609  & 87510  & 187171  & 106178  & 397967  & 51.15e6  & chalmpproc1-scaffolds.fa \\
     \bottomrule
     \end{tabular}
   \label{tab:chaklmpk61}
@@ -226,11 +225,13 @@ Do you remember these?
 
 Genome characteristics.
 Data:
+\begin{itemize}
  \item Coverage
  \item Error distributions
  \item Read sizes
  \item Fragment sizes
  \item Kmer spectra
+\end{itemize}
 
 Let's think a bit and try to improve the assembly...
 
@@ -258,9 +259,9 @@ Let's look at the stats.
     \toprule
     \textbf{n} & \textbf{n:500} & \textbf{L50} & \textbf{min} & \textbf{N80}& \textbf{N50}& \textbf{N20}& \textbf{E-size}& \textbf{max} & \textbf{sum}& \textbf{name}\\
     \midrule
-	128306  & 10150  & 1182  & 500  & 4954   & 12585   & 24777   & 15693   & 68684   & 51.03e6  & chaproclmp4-unitigs.fa
-	118939  & 5772   & 362   & 500  & 15717  & 41870   & 82033   & 52819   & 252066  & 52.24e6  & chaproclmp4-contigs.fa
-	116139  & 4014   & 141   & 500  & 41145  & 109273  & 224986  & 133450  & 460979  & 52.56e6  & chaproclmp4-scaffolds.fa
+	128306  & 10150  & 1182  & 500  & 4954   & 12585   & 24777   & 15693   & 68684   & 51.03e6  & chaproclmp4-unitigs.fa \\
+	118939  & 5772   & 362   & 500  & 15717  & 41870   & 82033   & 52819   & 252066  & 52.24e6  & chaproclmp4-contigs.fa \\
+	116139  & 4014   & 141   & 500  & 41145  & 109273  & 224986  & 133450  & 460979  & 52.56e6  & chaproclmp4-scaffolds.fa \\
     \bottomrule
     \end{tabular}
   \label{tab:chaklmp2-k61}
