@@ -149,10 +149,13 @@ The assembly contiguity is worse than fusarium, why?
 Let's put some LMP in there.
 
 \begin{steps}
+\begin{warning}
+This is also a pre-computed example for you:
 \begin{lstlisting}
 abyss-pe name=chalmp1 k=61 in="../LIB2570_raw_R1.fastq ../LIB2570_raw_R2.fastq" mp="lmp1" lmp1="../LIB8209_raw_R1.fastq ../LIB8209_raw_R2.fastq" np=4
 less chalmp1-stats.tab
 \end{lstlisting}
+\end{warning}
 \end{steps}
 
 \begin{table}[H]
@@ -176,9 +179,8 @@ Let's check the data by:
 \item Kmer spectra
 \item Fragment sizes
 \item Any hints on the protocol?
-A not-so-obvious property:
+And a not-so-obvious property:
 \end{information}
-
 \begin{steps}
 \begin{lstlisting}
 kat plot spectra-mx --intersection -x 30 -y 15000000 -o pe_vs_lmp-main.mx.spectra-mx.png pe_vs_lmp-main.mx
@@ -193,10 +195,13 @@ Do you remember LMP require pre-processing?  Let's try with processed LMP.
 \begin{steps}
 Prior task (already made) preprocess the LMP with nextclip.
 
+\begin{warning}
+This is also a pre-computed example for you:
 \begin{lstlisting}
 abyss-pe name=chalmpproc1 k=61 in="../../cha_raw/LIB2570_raw_R1.fastq ../../cha_raw/LIB2570_raw_R2.fastq" mp="proclmp1" proclmp1="../LIB8209_preproc_R1.fastq ../LIB8209_preproc_R2.fastq" np=4
 less chalmpproc1-stats.tab
 \end{lstlisting}
+\end{warning}
 \end{steps}
 
 \begin{table}[H]
@@ -237,10 +242,13 @@ Needs to fill
 \end{questions}
 \begin{steps}
 Testing the inclussion of heavily pre-procesed LMP coverage into the DBG
+\begin{warning}
+This is also a pre-computed example for you:
 \begin{lstlisting}
 abyss-pe name=chalmp2 k=61 se="../LIB8209_preproc_single.fastq" lib="lmp1" lmp1="../LIB8209_preproc_R1.fastq ../LIB8209_preproc_R2.fastq" np=4 >chaproclmp2.log 2>&1
 less chalmp2-stats.tab
 \end{lstlisting}
+\end{warning}
 \end{steps}
 Let's look at the stats.
 \begin{table}[H]
