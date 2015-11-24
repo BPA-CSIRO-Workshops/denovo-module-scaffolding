@@ -62,7 +62,7 @@ Before doing a scaffolding, we need to build an assembly using the pair-end read
 \begin{steps}
 Lets go to the correct location where the files are:
 \begin{lstlisting}
-cd /home/trainee/scaffolding
+cd /home/trainee/scaffolding/cha_raw/test_1
 \end{lstlisting}
 \end{steps}
 
@@ -98,11 +98,12 @@ less cha1-stats.tab
   \label{tab:chak27}
 \end{table}
 
-
+\begin{lstlisting}
+cd /home/trainee/scaffolding/cha_raw/test_2
+\end{lstlisting}
 \begin{warning}
 This is also a pre-computed example for you:
 \begin{lstlisting}
-
 abyss-pe name=cha2 k=61 in="../LIB2570_raw_R1.fastq ../LIB2570_raw_R2.fastq" np=4
 \end{lstlisting}
 \end{warning}
@@ -148,6 +149,9 @@ The assembly contiguity is worse than fusarium, why?
 Let's put some LMP in there.
 
 \begin{steps}
+\begin{lstlisting}
+cd /home/trainee/scaffolding/cha_raw/test_3
+\end{lstlisting}
 \begin{warning}
 This is also a pre-computed example for you:
 \begin{lstlisting}
@@ -196,7 +200,9 @@ Do you remember LMP require pre-processing?  Let's try with processed LMP.
 
 \begin{steps}
 Prior task (already made) preprocess the LMP with nextclip.
-
+\begin{lstlisting}
+cd /home/trainee/scaffolding/cha_proc/test_1
+\end{lstlisting}
 \begin{warning}
 This is also a pre-computed example for you:
 \begin{lstlisting}
@@ -242,13 +248,16 @@ Data:
 Let's think a bit and try to improve the assembly...
 
 \begin{questions}
-If you look at the pre-processed LMP, do you notice anything peculiar?
+If you look at the pre-processed LMP, do you notice anything peculiar? \\
 \begin{answer}
 Needs to fill
 \end{answer}
 \end{questions}
 \begin{steps}
 Testing the inclussion of heavily pre-procesed LMP coverage into the DBG
+\begin{lstlisting}
+cd /home/trainee/scaffolding/cha_proc/test_2
+\end{lstlisting}
 \begin{warning}
 This is also a pre-computed example for you:
 \begin{lstlisting}
@@ -281,6 +290,6 @@ Let's look at the stats.
 
 %TODO Change to using BiBTeX
 \begin{enumerate}
-  \item Robert Ekblom* andJochen B. W. Wolf. "A field guide to whole-genome sequencing, assembly and annotation" Evolutionary Applications Special Issue: Evolutionary Conservation Volume 7, Issue 9, pages 1026–1042, November 2014
-  \item De novo genome assembly: what every biologist should know Nature Methods 9, 333–337 (2012) doi:10.1038/nmeth.1935 
+  \item Robert Ekblom* andJochen B. W. Wolf. "A field guide to whole-genome sequencing, assembly and annotation" Evolutionary Applications Special Issue: Evolutionary Conservation Volume 7, Issue 9, pages 1026 – 1042, November 2014
+  \item De novo genome assembly: what every biologist should know Nature Methods 9, 333 – 337 (2012) doi:10.1038/nmeth.1935 
 \end{enumerate}
