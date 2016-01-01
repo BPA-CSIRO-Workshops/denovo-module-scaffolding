@@ -15,9 +15,7 @@ Bioinformatics Training Platform (BTP) Module: Contig Scaffolding
     * Run scaffolding and assess the assembly statistics`
   * Time Required
     * 3.5 hrs
-  * Compute Requirements
-    * 
-	
+
 License
 =======
 The contents of this repository are released under the Creative Commons
