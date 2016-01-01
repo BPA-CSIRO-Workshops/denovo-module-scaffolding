@@ -14,7 +14,7 @@ Bioinformatics Training Platform (BTP) Module: Contig Scaffolding
     * Compare results of LMP assemblies with those from the short reads.
     * Run scaffolding and assess the assembly statistics`
   * Time Required
-    * 
+    * 3.5 hrs
   * Compute Requirements
     * 
 	
